@@ -41,6 +41,14 @@ class CarritoView
                                     disabled>
                             </div>
                         </div>
+                        <div>
+                            <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
+                            <a
+                                href="index.php?controller=carrito&action=deleteFromCart&itemID=<?= $item["id_proyecto"] ?>"
+                                title="Eliminar artículo del carrito">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </article>

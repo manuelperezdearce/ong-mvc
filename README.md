@@ -50,13 +50,12 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 ![Ingresar](./public/image-ingresar.png)
 
 ### Changelog
-
+- Normalizar mensaje para carrito vacío
 
 
 ### Backlog
 
 - Gestionar error de login
-- Normalizar mensaje para carrito vacío
 - Quitar selección de rol al crear usuario
 - Al donar, ofrecer un a lista de valores
 - Mejorar vista Detalle (Proyectos y Eventos)

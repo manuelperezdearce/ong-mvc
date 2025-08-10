@@ -58,6 +58,27 @@ class carritoController
         $view->renderGracias();
     }
 
+    public function deleteFromCart()
+    {
+        if ($_SERVER["REQUEST_METHOD"] === "GET") {
+            $itemID = $_GET["itemID"];
+            echo "Vamos a eliminar el ID " . $itemID . " del carrito";
+            $ids = array_column($_SESSION['cart'], "id_proyecto");
+            var_dump($ids);
+            // Buscar la posición del item
+            $key = array_search($itemID, $ids);
+
+            if ($key !== false) {
+                unset($_SESSION['cart'][$key]); // eliminar
+                $_SESSION['cart'] = array_values($_SESSION['cart']); // reindexar
+                echo "Item eliminado con éxito.";
+                header("Location: index.php?controller=carrito&action=list");
+            } else {
+                echo "Item no encontrado en el carrito.";
+            }
+        }
+    }
+
     private function isLogin()
     {
         return !empty($_SESSION['username']);
