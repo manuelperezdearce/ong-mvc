@@ -18,8 +18,6 @@ $controllerPath = "./controllers/" . $controllerName . ".php";
 // var_dump($_SESSION);
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 

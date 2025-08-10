@@ -14,8 +14,6 @@ class CarritoView
             $total += floatval($monto);
         }
 ?>
-
-
         <?php if (empty($carrito)): ?>
             <p class="text-center text-gray-600">No hay donaciones en el carrito.</p>
         <?php else: ?>
