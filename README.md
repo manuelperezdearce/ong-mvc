@@ -49,9 +49,14 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 ### Ingresar
 ![Ingresar](./public/image-ingresar.png)
 
-### Próximos Cambios
+### Changelog
+
+
+
+### Backlog
 
 - Gestionar error de login
+- Normalizar mensaje para carrito vacío
 - Quitar selección de rol al crear usuario
 - Al donar, ofrecer un a lista de valores
 - Mejorar vista Detalle (Proyectos y Eventos)
@@ -63,4 +68,12 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 - Corregir comportamiento responsive de filtros
 - Ordenar por nombre
 - Mejorar filtro de cantidad de donaciones
+- Carrito > Donacion > Quitar/Eliminar
+- Agregar About
+- Registrar
+   - Mensaje para manejar registro exitoso de usuarios
+   - Mensaje para manejo de errores de registro y duplicidades
+- Admin
+   - Control Panel
+   - Gestión de entidades (proyectos, eventos, usuarios)
 

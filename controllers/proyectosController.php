@@ -178,15 +178,8 @@ class proyectosController
 
                 if ($proyecto) {
                     if (!isset($_SESSION['user_id'])) {
-?>
-
-                        <div class="bg-white p-8 rounded-md max-w-lg text-center shadow-md mx-auto">
-                            <h3>
-                                Para realizar donaciones debe
-                                <a class="text-blue-600 font-bold" href="index.php?controller=usuarios&action=iniciarSesion">iniciar sesión</a>
-                            </h3>
-                        </div>
-                <?php
+                        $proyectosView = new ProyectosView();
+                        $proyectosView->renderAccessDenied();
                         return;
                     }
 
@@ -218,7 +211,7 @@ class proyectosController
             $proyecto = $proyectosModel->getOneByID($idProyecto);
 
             if ($proyecto):
-                ?>
+?>
                 <h1 class="text-2xl my-4 text-center font-bold">Realizar Donación</h1>
                 <div class="max-w-md mx-auto bg-white p-6 rounded shadow">
                     <h2 class="font-semibold mb-2"><?= htmlspecialchars($proyecto['nombre']) ?></h2>

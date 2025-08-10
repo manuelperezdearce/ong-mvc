@@ -14,9 +14,6 @@ $action = isset($_GET["action"]) ? $_GET["action"] : 'list';
 // Ruta para encontrar los controladores en el MVC
 $controllerPath = "./controllers/" . $controllerName . ".php";
 
-// debug de la sesion
-// var_dump($_SESSION);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

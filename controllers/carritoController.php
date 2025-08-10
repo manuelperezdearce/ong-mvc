@@ -11,17 +11,16 @@ class carritoController
             if ($this->isLogin()) {
                 // Asegurar que el carrito esté definido
                 $carrito = $_SESSION['cart'] ?? [];
-                $carritoView = new CarritoView();
-                $carritoView->renderLista($carrito);
+                if (!empty($carrito)) {
+                    $carritoView = new CarritoView();
+                    $carritoView->renderLista($carrito);
+                } else {
+                    $carritoView = new CarritoView();
+                    $carritoView->renderEmptyCart();
+                }
             } else {
-?>
-                <div class="bg-white p-8 rounded-md max-w-lg text-center shadow-md mx-auto">
-                    <h3>
-                        Para acceder al carrito de compras debe
-                        <a class="text-blue-600 font-bold" href="index.php?controller=usuarios&action=iniciarSesion">iniciar sesión</a>
-                    </h3>
-                </div>
-<?php
+                $carritoView = new CarritoView();
+                $carritoView->renderAccessDenied();
             }
         } catch (\Throwable $th) {
             echo "Error en carrito: " . $th->getMessage();

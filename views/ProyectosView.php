@@ -176,6 +176,19 @@ class ProyectosView
             <button type="submit" class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">Guardar cambios</button>
             <a href="index.php?controller=proyectos&action=list" class="ml-2 text-blue-600 hover:underline">Cancelar</a>
         </form>
+    <?php
+    }
+    public function renderAccessDenied()
+    {
+    ?>
+
+        <div class="bg-white p-8 rounded-md max-w-lg text-center shadow-md mx-auto">
+            <h3>
+                Para realizar donaciones primero debes </br>
+                <a class="text-blue-600 font-bold" href="index.php?controller=usuarios&action=iniciarSesion">iniciar sesión</a>
+            </h3>
+        </div>
 <?php
+
     }
 }
