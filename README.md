@@ -54,4 +54,13 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 - Gestionar error de login
 - Quitar selección de rol al crear usuario
 - Al donar, ofrecer un a lista de valores
+- Mejorar vista Detalle (Proyectos y Eventos)
+- Vista perfil de usuario
+- Corregir scroll y comportamiento de navbar
+- Agregar un Hero, seguramente un carrusel
+- Normalizar tema
+- Modo Nocturno
+- Corregir comportamiento responsive de filtros
+- Ordenar por nombre
+- Mejorar filtro de cantidad de donaciones
 
