@@ -48,3 +48,10 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 
 ### Ingresar
 ![Ingresar](./public/image-ingresar.png)
+
+### Próximos Cambios
+
+- Gestionar error de login
+- Quitar selección de rol al crear usuario
+- Al donar, ofrecer un a lista de valores
+

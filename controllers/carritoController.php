@@ -17,8 +17,8 @@ class carritoController
 ?>
                 <div class="bg-white p-8 rounded-md max-w-lg text-center shadow-md mx-auto">
                     <h3>
-                        Inicie sesión para acceder al carrito de compras,
-                        <a class="text-blue-600 font-bold" href="index.php?controller=usuarios&action=iniciarSesion">Ir a Ingresar</a>
+                        Para acceder al carrito de compras debe
+                        <a class="text-blue-600 font-bold" href="index.php?controller=usuarios&action=iniciarSesion">iniciar sesión</a>
                     </h3>
                 </div>
 <?php

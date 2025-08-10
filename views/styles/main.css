@@ -5,7 +5,7 @@ body {
     display: grid;
     grid-row: auto 1fr auto;
     gap: 2rem;
-    background-image: url("../public/ong-background.jpg");
+    background-image: url("../public/ong-backgroundLow.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
