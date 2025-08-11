@@ -15,7 +15,8 @@ class proyectosController
             // Crear una instancia de la vista
             $proyectosView = new ProyectosView();
             // Llamar al método y Enviar datos a la vista
-            $proyectos = $proyectosView->renderLista($proyectos);
+            // include_once "./views/components/hero.php";
+            $proyectosView->renderLista($proyectos);
         } catch (\Throwable $th) {
             echo $th;
         }

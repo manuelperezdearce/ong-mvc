@@ -51,7 +51,7 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 
 ### Changelog
 - Normalizar mensaje para carrito vacío
-
+- Carrito > Donacion > Quitar/Eliminar
 
 ### Backlog
 
@@ -67,7 +67,6 @@ Para más detalles revisa los controladores y vistas en el código fuente.
 - Corregir comportamiento responsive de filtros
 - Ordenar por nombre
 - Mejorar filtro de cantidad de donaciones
-- Carrito > Donacion > Quitar/Eliminar
 - Agregar About
 - Registrar
    - Mensaje para manejar registro exitoso de usuarios

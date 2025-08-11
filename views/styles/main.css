@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-row: auto 1fr auto;
-    gap: 2rem;
+    /* gap: 2rem; */
     background-image: url("../public/ong-backgroundLow.jpg");
     background-size: cover;
     background-repeat: no-repeat;

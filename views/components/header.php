@@ -13,6 +13,10 @@ $itemCounter = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
         </a>
         <ul class="flex flex-wrap justify-end [&>*]:mx-2 h-full [&>*]:w-[90px] [&>*]:[&>*]:mx-auto">
             <li class="flex items-center">
+                <a href="index.php?controller=home&action=renderController"
+                    class="<?= $active === 'home' ? 'active' : '' ?>">Inicio</a>
+            </li>
+            <li class="flex items-center">
                 <a href="index.php?controller=proyectos&action=list"
                     class="<?= $active === 'proyectos' ? 'active' : '' ?>">Proyectos</a>
             </li>

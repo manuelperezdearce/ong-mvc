@@ -6,8 +6,6 @@ class ProyectosView
     {
 ?>
         <h1 class="text-2xl my-4 text-center font-bold">Lista de Proyectos</h1>
-
-
         <section class="container-controllers">
             <?php include_once __DIR__ . "/components/crearButton.php"; ?>
             <form id="filtroProyectos" class="flex flex-row flex-wrap gap-2" action="index.php?controller=proyectos&action=listPopular" method="POST">

@@ -1,0 +1,1 @@
+<img class="w-full" src="./views/public/banner.png" alt="">

@@ -34,7 +34,8 @@ $controllerPath = "./controllers/" . $controllerName . ".php";
 
     <?php include_once "./views/components/header.php" ?>
 
-    <main class="max-w-[1200px] mx-auto">
+
+    <main class="mx-auto">
         <!-- Acá se renderiza lo que genere devuelva el controlador -->
         <?php
         if (file_exists($controllerPath)) {
